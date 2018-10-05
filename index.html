@@ -1,27 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
 
-    <link rel="shortcut icon" type="image/png" href="img/logo.ico">
+    <!--Brand Icons from font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <title>Rosemary Dabbs</title>
-  </head>
-  <body>
-    <div class=container>
-    	<h1>Hello, world!</h1>
-    	<p>This site is currently under construction. Thank you for your patience.</p>
-    	<img src="elephant.jpg" class="img-fluid rounded">
-	</div>
+</head>
 
-    <!-- Optional JavaScript -->
+<body>
+    <!--Navigation Menu-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">ROSEMARY</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Memories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        <!--Removed search feature
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        -->
+        </div>
+    </nav>
+
+    <header>
+        <div class="jumbotron jumbo-image text-center">
+            <div class="container">
+                <h2>Hello, I'm Rosemary.</h2>
+                <p>Welcome to my personal portfolio.</p>
+            </div>
+        </div>
+    </header>
+
+    <!--About Me-->
+    <div class="container-fluid text-center bg-1 add-padding">
+        <img src="img/selfportrait.jpg" class="img-fluid" alt="Rosemary Dabbs">
+        <h3>I am an engineer, scientist, and artist.</h3>
+    </div>
+    <!--Skills-->
+    <div class="container text-center bg-2 add-padding">
+        <h2>My Skills</h2>
+        <div class="progress">
+            <div class="progress-bar bg-secondary" style="width:80%">
+                <div class="progress-value">80%</div>
+                <div class="progressbar-title">HTML5</div>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-secondary" style="width:60%">
+                <div class="progress-value">60%</div>
+                <div class="progressbar-title">CSS</div>
+            </div>
+        </div>
+        <div class=progress>
+            <div class="progress-bar bg-secondary" style="width:45%">
+                <div class="progress-value">45%</div>
+                <div class="progressbar-title">Python</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <!--Memories-->
+        <h2>Memories</h2>
+        <h5>Belize, May 2015</h5>
+        <!--Image Gallery-->
+        <div class="row">
+            <div class="m-1">
+                <a href="img/belize/belize1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <img alt="iguana-on-head" src="img/belize/belize1.jpg" class="image-fluid rounded max-height">
+                </a>
+            </div>
+
+            <div class="m-1">
+                <a href="img/belize/belize2.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <img alt="hard-at-work" src="img/belize/belize2.jpg" class="image-fluid rounded max-height">
+                </a>
+            </div>
+
+            <div class="m-1">
+                <a href="img/belize/belize3.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
+                    <img alt="hair-makeover" src="img/belize/belize3.jpg" class="image-fluid rounded max-height">
+                </a>
+            </div>
+        </div>
+        <br>
+        <h5>Europe, May 2012</h5>
+        <div class="d-inline-flex justify-content-center align-items-around m-1">
+            <a href="img/europe/salzburg1.jpg">
+                <img alt="picture" src="img/europe/salzburg1.jpg" class="image-fluid rounded max-height">
+            </a>
+        </div>
+
+        <div class="d-inline-flex justify-content-center align-items-around m-1">
+            <a href="img/europe/salzburg2.jpg">
+                <img alt="picture" src="img/europe/salzburg2.jpg" class="image-fluid rounded max-height">
+            </a>
+        </div>
+
+        <div class="d-inline-flex justify-content-center align-items-around m-1">
+            <a href="img/europe/salzburg3.jpg">
+                <img alt="picture" src="img/europe/salzburg3.jpg" class="image-fluid rounded max-height">
+            </a>
+        </div>
+
+        <div class="d-inline-flex justify-content-center align-items-around m-1">
+            <a href="img/europe/salzburg4.jpg">
+                <img alt="picture" src="img/europe/salzburg4.jpg" class="image-fluid rounded max-height">
+            </a>
+        </div>
+
+        <div class="d-inline-flex justify-content-center align-items-around m-1">
+            <a href="img/europe/salzburg5.jpg">
+                <img alt="picture" src="img/europe/salzburg5.jpg" class="image-fluid rounded max-height">
+            </a>
+        </div>
+
+        <div class="d-inline-flex justify-content-center align-items-around m-1">
+            <a href="img/europe/salzburg6.jpg">
+                <img alt="picture" src="img/europe/salzburg6.jpg" class="image-fluid rounded max-height">
+            </a>
+        </div>
+
+        <div class="d-inline-flex justify-content-center align-items-around m-1">
+            <a href="img/europe/salzburg7.jpg">
+                <img alt="picture" src="img/europe/salzburg7.jpg" class="image-fluid rounded max-height">
+            </a>
+        </div>
+
+        <div class="d-inline-flex justify-content-center align-items-around m-1">
+            <a href="img/europe/salzburg8.jpg">
+                <img alt="picture" src="img/europe/salzburg8.jpg" class="image-fluid rounded max-height">
+            </a>
+        </div>
+        <!--Follow Me-->
+        <div class="container-fluid text-center bg-4 add-padding">
+            <h2>Follow Me</h2>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/rosemary.dabbs.5" target="_blank">
+                        <i class="fa fa-facebook-square" style="font-size:24px"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/rosemary-dabbs-79449099" target="_blank">
+                        <i class="fa fa-linkedin-square" style="font-size:24px"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/rdabbs42" target="_blank">
+                        <i class="fa fa-github-square" style="font-size:24px"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Return to Top</a>
+                </li>
+            </ul>
+            <hr class="d-sm-none">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="jumbotron text-center" style="margin-bottom:0; color: #000000;">
+        <p>Contact Me
+            <br>
+            <a href="mailto:rdabbs42@gmail.com">rdabbs42@gmail.com</a>
+        </p>
+    </div>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <!-- My JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+
 </html>
