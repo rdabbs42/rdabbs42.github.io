@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
+    <!--Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!--Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
 
@@ -19,8 +19,8 @@
 
 <body>
     <!--Navigation Menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="index.html">ROSEMARY</a>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary sticky-top">
+        <a class="navbar-brand" href="index.html">ROSEMARY DABBS</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,11 +29,8 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="memories.html">Memories</a>
@@ -53,11 +50,60 @@
 
     <!--About Me-->
     <div class="container-fluid text-center bg-1 add-padding">
-        <img src="img/selfportrait.jpg" class="img-fluid" alt="Rosemary Dabbs">
-        <h3>I am an engineer, scientist, and artist.</h3>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="img/selfportrait.jpg" class="img-fluid border border-info border-thickness p-4" alt="Rosemary Dabbs">
+                <h3>I am an engineer, scientist, and artist.</h3>
+            </div>
+            <div class="col-lg-8">
+                <p>My first encounter with the application of computer programming was the summer after my junior year in high school when I attended Governor's school for information technologies at Tennessee Tech and took a class in Visual Basic for excel macros along with classes in nanotechnology, engineering physics, and GIS. Because of this early exposure to engineering principles, I knew I wanted to pursue a technical field in college, so I applied for the engineering program at the University of Tennessee, Knoxville and earned a Bachelor's in <span class="text-info font-weight-bold text-larger">chemical engineering</span> with a Biomolecular concentration. My time as an undergraduate taught me how to study hard and allowed me to focus on learning. My most valuable experiences were from group projects where I worked with students of varied backgrounds. Gaining a solid camaraderie with my classmates opened up conversations that allowed me to grow as an individual. I also learned valuable skills such as aseptic laboratory techniques and basic <span class="text-info font-weight-bold text-larger">computer programming</span> in MatLab as well as advanced math including calculus, differential equations, matrix computations, and statistics. These proficiencies and my background in <span class="text-info font-weight-bold text-larger">biology</span> have already aided me in the fundamental biology research I am currently participating in at Oak Ridge National Laboratory. While in school, I also gained <span class="text-info font-weight-bold text-larger">industry experience</span> through the Cooperative Education (Co-Op) Program where I obtained a position with DuPont Titanium Technologies, now known as The Chemours Company, within the research and development department. My projects during my Co-Op experience involved optimization of industrial-sized wash drums, lamella settlers, and distillation columns; new product <span class="text-info font-weight-bold text-larger">research</span> through small batch sized wet chemistry reactions; and control system graphical improvements in Aspen HYSYS software. While I continue to explore my research, I am enrolled in a Fundamentals of Digital Archaeology class which builds on the python skills I taught to myself while getting experience with tools like BeautifulSoup, MongoDB, R, mean.js, and caffe: a deep learning framework.  The more I learn, the more I want to learn. I am excited about what the future holds as I continue down this path.</p>
+            </div>
+        </div>
     </div>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--Skills-->
+    <div class="container text-center bg-2 add-padding">
+        <h2>Programming Languages and Skills</h2>
+        <div class="progress">
+            <div class="progress-bar bg-secondary" style="width:80%">
+                <div class="progress-value">80%</div>
+                <div class="progressbar-title">HTML/CSS/JS</div>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-secondary" style="width:70%">
+                <div class="progress-value">70%</div>
+                <div class="progressbar-title">Python</div>
+            </div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar bg-secondary" style="width:90%">
+                <div class="progress-value">90%</div>
+                <div class="progressbar-title">MatLab</div>
+            </div>
+        </div>
+        <div class=progress>
+            <div class="progress-bar bg-secondary" style="width:20%">
+                <div class="progress-value">20%</div>
+                <div class="progressbar-title">R</div>
+            </div>
+        </div>
+        <div class=progress>
+            <div class="progress-bar bg-secondary" style="width:40%">
+                <div class="progress-value">40%</div>
+                <div class="progressbar-title">Bash</div>
+            </div>
+        </div>
+        <div class=progress>
+            <div class="progress-bar bg-secondary" style="width:65%">
+                <div class="progress-value">65%</div>
+                <div class="progressbar-title">Git/Version Control</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -65,7 +111,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 
-    <!-- My JavaScript -->
+    <!--My JavaScript -->
     <script src="./js/main.js"></script>
 </body>
 

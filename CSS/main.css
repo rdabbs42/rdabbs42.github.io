@@ -71,7 +71,6 @@ figure {
 }
 
 /*--Photo Gallery--*/
-
 .max-height {
     max-height: 360px;
     overflow: hidden;
@@ -94,4 +93,14 @@ figure {
 /*--Navigation--*/
 .nav-link{
     font-size: 17px;
+}
+
+/*--Border--*/
+.border-thickness {
+    border-width:15px !important;
+}
+
+/*--Text Size--*/
+.text-larger{
+    font-size: 20px;
 }
