@@ -42,8 +42,10 @@ figure {
 
 /*--Jumbotron--*/
 .jumbo-image{
-    background-image: url("../img/zion_background.jpg") ;
+    background-image: url("../img/zion_background_vivid.jpg") ;
     background-size: cover;
+    background-position: center;
+    width: 100vw;
     height: 100vh;
 }
 
